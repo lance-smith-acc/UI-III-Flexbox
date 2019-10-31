@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border:0;
+	border:;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -69,10 +69,6 @@ h1, h2, h3, h4, h5 {
 body {
 	width:1000px;
 	margin:0 auto;
-	border-left: 1px solid lightslategray;
-	border-right:1px solid lightslategray;
-	padding-left: 5%;
-	padding-right:5%;
 }
 
 a {
@@ -98,6 +94,7 @@ header a {
 	height:25%;
 	color:grey;
 	font-size: 15px;
+	border-radius: 5px;
 }
 
 header a:hover {
@@ -110,7 +107,16 @@ header img {
 	flex-grow:0;
 }
 
+#logoLink {
+	padding:0;
+}
+#logoLink:hover {
+	background-color:white;
+}
+
 /* End Header */
+
+/* Home Page */
 /* Banner Section */
 section.banner {
 	margin-top:3%;
@@ -124,7 +130,7 @@ section.banner {
 	flex-grow:0;
 }
 
-h1 {
+.banner h1 {
 	font-size: 70px;
 	text-align:center;
 }
@@ -176,6 +182,92 @@ section.bottom {
 
 footer {
 	width:100%;
-	margin:10%;
+	margin:5% 0 5%;
 	text-align: center;
 }
+
+/* End homepage */
+
+/* Begin Services Page */
+
+/* Header Section*/
+.services-header-img {
+	width:100%;
+}
+
+section.servicesBox {
+	margin-top:3%;
+	margin-bottom:5%;
+	padding-bottom: 5%;
+	border-bottom: 3px solid grey;
+	width:100%;
+}
+
+/* End Header Section */
+
+/* Begin Selection Section */
+
+section.optionsBox {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	width:100%;
+	margin-bottom: 5%;
+}
+
+.optionsBox div {
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+	width:48%;
+	margin-bottom:3%;
+	padding:3% 2% 3%;
+	border:1px solid black;
+	background-color:whitesmoke;
+}
+
+.optionsBox a {
+	text-align:center;
+	width:40%;
+	margin-top: 5%;
+	padding:3%;
+	border:1px solid black;
+	background-color:white;
+	border-radius:5px;
+	color:black;
+	font-size: 12pt;
+}
+
+.optionsBox a:hover {
+	color:white;
+	background-color: black;
+}
+
+/* End Selection Section */
+
+/* Begin Bottom Section */
+.factsBox {
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	border-top:3px solid grey;
+	padding-top:5%;
+}
+
+div.someFacts {
+	width:50%;
+	display:flex;
+	flex-direction:column;
+}
+
+.factsBox ul {
+	margin-left:10%;
+	margin-top:5%;
+}
+
+.factsBox li {
+	line-height:2;
+	margin-left:5%;
+}
+
+/* End Bottom Section */
